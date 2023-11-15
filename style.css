@@ -1,9 +1,57 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #7c86e4;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+}
+
+/* Estilos específicos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .content {
+        width: 65%; /* Ajusta según sea necesario */
+    }
+
+    .sidebar {
+        width: 30%;
+        position: sticky;
+        top: 20px;
+    }
+}
+
+/* Ajusta el tamaño de las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para hacer el header responsivo */
 header {
     background-color: #163255;
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -13,12 +61,8 @@ header {
 }
 
 #title {
-    margin-left: 5px  ;
-    text-align: left;
-}
-
-h1, h2, h3 {
-    margin: 0;
+    margin-top: 10px;
+    text-align: center;
 }
 
 #index {
@@ -42,52 +86,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-/* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .content {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar {
-    width: 100%;
-    background-color: #7c86e4;
-    padding: 20px;
-    border-radius: 5px;
-    position: relative;
-    top: 0;
-  }
-  
-  /* Estilos específicos para pantallas medianas y grandes */
-  @media (min-width: 768px) {
-    .content {
-      width: 65%; /* Ajusta según sea necesario */
-    }
-  
-    .sidebar {
-      width: 30%;
-      position: sticky;
-      top: 20px;
-    }
-  }
-  
- 
-  
-  /* Ajusta el tamaño de las imágenes */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  

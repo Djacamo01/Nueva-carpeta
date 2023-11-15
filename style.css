@@ -1,3 +1,47 @@
+header {
+    background-color: #163255;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+}
+
+#title {
+    margin-left: 5px  ;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+#index {
+    margin-top: 20px;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
@@ -39,24 +83,7 @@ body {
     }
   }
   
-  /* Estilos para encabezados y otros elementos según sea necesario */
-  
-  /* Estilos adicionales según tus preferencias */
-  #index {
-    background-color: #ddd;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  #index a {
-    text-decoration: none;
-    color: #da9292;
-    font-weight: bold;
-  }
-  
-  #index a:hover {
-    color: #7c86e4;
-  }
+ 
   
   /* Ajusta el tamaño de las imágenes */
   img {

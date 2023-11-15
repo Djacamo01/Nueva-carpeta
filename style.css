@@ -1,78 +1,66 @@
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 20px;
+    background-color: #f9f9f9;
   }
   
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   
   .content {
-    width: 60%;
-  }
-
-  .sidebar {
-    width: 30%;
-    background-color: #7c86e4;
-    padding: 20px;
-    border-radius: 5px;
-    position: sticky;
-    display: block;
-    top: 20px; /* Ajusta la posición fija según tu necesidad */
-  }
-  
-  h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-  }
-  
-  h3 {
-    color: #555;
-  }
-  
-  p {
-    color: #666;
-  }
-  
-  #index {
+    width: 100%;
     margin-bottom: 20px;
   }
   
-  #index ol {
-    list-style: none;
-    padding: 0;
+  .sidebar {
+    width: 100%;
+    background-color: #7c86e4;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
   }
   
-  #index li {
-    margin-bottom: 8px;
+  /* Estilos específicos para pantallas medianas y grandes */
+  @media (min-width: 768px) {
+    .content {
+      width: 65%; /* Ajusta según sea necesario */
+    }
+  
+    .sidebar {
+      width: 30%;
+      position: sticky;
+      top: 20px;
+    }
   }
   
-
-  /* Agrega estilos adicionales según tu preferencia */
+  /* Estilos para encabezados y otros elementos según sea necesario */
   
-  /* Fondo del cuerpo */
-  body {
-    background-color: #f9f9f9;
-  }
-  
-  /* Estilo del índice */
+  /* Estilos adicionales según tus preferencias */
   #index {
     background-color: #ddd;
     padding: 10px;
     border-radius: 5px;
   }
   
-  /* Enlaces del índice */
   #index a {
     text-decoration: none;
     color: #da9292;
     font-weight: bold;
   }
   
-  /* Cambia el color al pasar el mouse sobre los enlaces */
   #index a:hover {
     color: #7c86e4;
+  }
+  
+  /* Ajusta el tamaño de las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
   }
   
